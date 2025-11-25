@@ -1,0 +1,168 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  background: #020617;
+  border-radius: 16px;
+  padding: 24px 28px 28px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-title {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.app-subtitle {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #f9fafb;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #38bdf8;
+}
+
+.search-button {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.status-text {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  min-height: 18px;
+  margin-bottom: 8px;
+}
+
+.result-card {
+  margin-top: 8px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #020617;
+  border: 1px solid #1f2937;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.result-city {
+  font-size: 1.2rem;
+}
+
+.result-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.aqi-value {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.aqi-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.chip {
+  display: inline-flex;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #111827;
+  border: 1px solid #1f2937;
+  margin-right: 6px;
+}
+
+.pollutant-grid {
+  display: grid;
+  margin-top: 10px;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+}
+
+.pollutant-card {
+  padding: 8px;
+  border-radius: 10px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  font-size: 0.8rem;
+}
+
+.history-row {
+  margin-top: 12px;
+  font-size: 0.8rem;
+}
+
+.history-tag {
+  display: inline-flex;
+  padding: 4px 10px;
+  margin-right: 6px;
+  margin-top: 4px;
+  border-radius: 999px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  cursor: pointer;
+}
+
+.error-text {
+  color: #f97373;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
